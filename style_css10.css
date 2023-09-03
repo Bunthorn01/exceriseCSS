@@ -1,0 +1,190 @@
+    /* tag nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(65, 64, 65);
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+        margin-right: 20px;
+    }
+    .navbar-menu li {
+        margin-right: 10px;
+    }
+    .navbar-menu li a {
+        text-decoration: none;
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px
+    }
+
+    /* smart phone menu */
+    @media (max-width: 479px) {
+        .navbar-menu {
+            display: none;
+            /* hide class navbar-menu 
+            when width of screen size at 479px */
+        }
+    }
+    /* hide menu phone */
+    @media (min-width: 480px) {
+        .phone-menu {
+            display: none;
+            /* hide class phone-menu 
+            when width of screen size at 480px */
+        }
+    }
+    .phone-menu {
+        margin-right: 40px;;
+    }
+    .phone-menu li {
+        list-style: none;
+    }
+    .phone-menu li button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    .phone-menu li button:hover {
+        box-shadow: 0px 3px 3px 1px rgb(226, 227, 230);
+        background-color: rgb(81, 171, 249);
+        color: white;
+    }
+
+    /* dropdown menu */
+    .menu-content {
+        display: none;
+    }
+    .phone-menu:hover .menu-content {
+        display: block;
+        position: absolute;
+        margin-right: 1000px;
+    }
+    .phone-menu:hover .menu-content li {
+        background-color: rgba(39, 38, 38, 0.8);
+        padding: 10px 20px;
+    }
+    .phone-menu:hover .menu-content li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .phone-menu:hover .menu-content li:hover {
+       background-color: blue;
+    }
+
+    /* example 9 */
+    .card {
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: rgb(95, 167, 249);  
+        transition: all 0.5s;
+    }
+    .card:hover {
+        box-shadow: 0px 5px 8px rgb(78, 78, 79);
+        background-color: rgb(65, 149, 245); 
+    }
+    .card img {
+        width: 100%;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .card a.btn {
+        background-color: rgb(114, 229, 255);
+        color: rgb(91, 89, 89);
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        font-weight: bold;
+    }
+    .card a.btn:hover {
+        background-color: white;
+        color: rgb(0, 0, 246);
+    }
+    .card-container {
+        display: flex;
+        /* This property provides a flexible way to create  row layouts. */
+        flex-wrap: wrap;
+        /* creating a responsive layout 
+        when horizontal space is insufficient(មិន​គ្រប់គ្រាន់) to display items */
+        justify-content: center;
+        /* Center the cards horizontally(ផ្តេក) within the container */
+    }
+    .container {
+        background-color: rgb(238, 237, 235);
+        border-radius: 10px;
+        max-width: 90%;
+        margin: 40px auto;
+        /* padding: 20px 0px; */
+    }
+    .container h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    /* footer */
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.footer-links a:hover {
+    color: #ff5733;
+}
+
+.footer-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
